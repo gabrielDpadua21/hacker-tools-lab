@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  kali-docker:
+    image: kali-lab
+    container_name: kali-docker
+    volumes:
+      - "./tools/:/root/tools"
+    ports:
+      - "55900:5900"
+      - "55901:5901"
+    tty: true  
+    
